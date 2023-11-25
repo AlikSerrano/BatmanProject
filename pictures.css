@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: black;
+}
+
+header{
+  
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+nav{
+  width: 60%;
+
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+    
+}
+
+li{
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: "Kdam Thmor Pro";
+  
+}
+
+li:hover{
+  color: darkred;
+
+}
+
+
+#logo{
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: darkred;
+}
+
+.charactersPics{
+  color: aliceblue;
+  font-family: "Kdam Thmor Pro";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.director{
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Kdam Thmor Pro";
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+.card-container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  
+}
+
+.actorsCards{
+  width:90%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+
+  
+}
+
+.actor{
+  width:100%;
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 10px 10px;
+  color: aliceblue;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro";
+  cursor: pointer;
+  transition: transform 0.1s;
+
+}
+
+
+.actor:hover{
+  transform:scale(1.02);
+}
+
+.banner1{
+  background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2022/01/The-Batman.jpg);
+}
+
+
+.banner2{
+  background-image: url(https://i0.statig.com.br/bancodeimagens/42/2w/vl/422wvlxbdecwytldwljvgb4we.jpg);
+}
+
+.banner3{
+  background-image: url(https://cinebuzz.uol.com.br/media/_versions/jeffrey-wright-comissario-gordon-12345_widexl.jpg);
+}
+
+.banner4{
+  background-image: url(https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2021/12/12194221/Farrell-Penguin.jpeg);
+}
+
+.banner5{
+  background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2022/12/paul-dano-as-the-riddler-behind-bars-in-the-batman.jpg);
+}
+
+.banner6{
+  background-image: url(https://static1.personality-database.com/profile_images/f31910daca074b8ab1ca0e3a53a31dec.png);
+}
+
+.banner7{
+  background-image: url(https://ovicio.com.br/wp-content/uploads/2022/03/20220303-ovicio-batman-andy-serkis-alfred.jpg);
+}
+
+.banner8{
+  background-image: url(https://pbs.twimg.com/media/EQMqVX9U4AAWVhG.jpg);
+}
+
+.banner9{
+  background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/738434_v9_bd.jpg);
+}
+
+.banner10{
+  background-image: url(https://www.looper.com/img/gallery/who-plays-bella-real-in-the-batman/l-intro-1646422250.jpg);
+}
+
+.banner11{
+  background-image: url(https://pbs.twimg.com/media/FW5E2WpXoAIHv3m.jpg);
+}
+
+.banner12{
+  background-image: url(https://assets.mycast.io/actor_images/actor-peter-mcdonald-412286_large.jpg?1650745021);
+}
+
+.banner13{
+  background-image: url(https://assets.mycast.io/actor_images/actor-con-o-neill-378226_large.jpg?1646425737);
+}
+
+.banner14{
+  background-image: url(https://pbs.twimg.com/media/Egxq7-_VoAAevRA.jpg);
+}
+
+.banner15{
+  background-image: url(https://static.wikia.nocookie.net/the-batman-universe/images/8/80/Mayor_Mitchell.png);
+}
+
+.banner16{
+  background-image: url(https://images.squarespace-cdn.com/content/v1/58d9a56f59cc68c4bc109854/1491845833282-EXY3FRNEXKZRO54C75PD/whatswrong.jpeg);
+}
+
+footer{
+  height: 200px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+span{
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  font-family:"Kdam Thmor Pro";
+}
+
+
+
+.footer-navigation{
+  display: none;
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width:768px){
+  .footer-navigation{
+    display: block;
+  }
+
+  .actorsCards{
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+
+  }
+
+  nav{
+    display: none;
+  }
+
+  ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+li{
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: "Kdam Thmor Pro";
+  background-color: black;
+  
+}
+
+li:hover{
+  color: darkred;
+  
+  }
+  
+
+  
+
+}
+ 

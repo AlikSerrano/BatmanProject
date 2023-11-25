@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+header{
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav{
+  width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: "Kdam Thmor Pro";
+}
+
+li:hover{
+  color: darkred;
+
+}
+
+#logo{
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+#banner{
+  background-image: url("https://w0.peakpx.com/wallpaper/307/244/HD-wallpaper-the-batman-movie-poster-art-the-batman-batman-superheroes-movies-2022-movies.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+#trailer-container{
+  width:100%;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  border: darkred;
+  border-style: solid;
+  border-width: 2px;
+  
+
+  
+}
+
+.content{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trailer-container{
+  width: 100%;
+}
+
+iframe{
+  margin-left: 30px;
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+}
+
+#sinopse{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+ 
+}
+
+.description{
+  color: white;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro";
+  font-weight: lighter;
+  font-size: smaller;
+  width: 80%;
+ 
+  
+}
+
+.button{
+  width: 200px;
+  height: 60px;
+  background-color: darkred;
+  color: aliceblue;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .8s;
+  font-size: 18px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 30px;}
+
+  
+.button:hover{
+  background-color: aliceblue;
+  color: darkred;
+}
+  
+
+.actor-cards-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  
+}
+
+.cards-content{
+  width:90%;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+
+}
+
+.card{
+  width: 100%;
+  height:600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: aliceblue;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro";
+
+}
+
+.card:hover{
+  transform:scale(1.02);
+}
+
+.banner-1{
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/batman-1646665044.jpeg');
+}
+
+.banner-2{
+  background-image: url('https://www.hdwallpapers.in/download/catwoman_dc_comics_zoe_kravitz_hd_the_batman-HD.jpg')
+}
+
+.banner-3{
+  background-image: url('https://2.bp.blogspot.com/-N9DtMsBCAwI/XbtdLT8foBI/AAAAAAACzVU/bTyfrBq-ApwVG8DUfRmWYVlvKyzXJ-08wCK4BGAYYCw/s1600/jeffreywrights.jpg');
+}
+
+footer{
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span{
+  color: aliceblue;
+  font-family:"Kdam Thmor Pro";
+}
+
+.footer-navigation{
+  display: none;
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(max-width:768px){
+  .footer-navigation{
+    display: block;
+  }
+
+  nav{
+    display: none;
+  
+  }
+
+  #trailer-container{
+    width: 100%;
+    height: 400px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+    width:95%;
+    display:flex;
+    flex-direction: column;
+    
+  }
+
+  .trailer{
+    width:100%;
+    
+  }
+
+  #sinopse{
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description{
+    width: 100%;
+  }
+
+  .button{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cards-content{
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+  }
+
+  
+  }
+
+
+
+
+
+  
+
